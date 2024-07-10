@@ -177,7 +177,8 @@ export async function addTestFromAPI(
   scriptingName,
   label,
   testType,
-  priority
+  priority,
+  extras
 ) {
   // The number of objects to keep in the queue before removal
   const removeOnComplete = nconf.get('queue:removeOnComplete') || 200;
@@ -205,7 +206,8 @@ export async function addTestFromAPI(
     scripting,
     label,
     slug,
-    config
+    config,
+    extras
   );
 
   logger.info(`Adding test with id ${jobId} in queue ${queue} using the API`);
@@ -231,6 +233,7 @@ export async function addTestFromAPI(
       {
         url,
         config,
+        extras,
         scripting,
         scriptingName,
         label

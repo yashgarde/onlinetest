@@ -23,26 +23,26 @@ services:
       volumes:
         - minio-data:/data
       ports:
-        - "9000:9000"
+        - "9002:9002"
         - "9001:9001"
       environment:
         - MINIO_ROOT_USER=${MINIO_ROOT_USER}
         - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD}
-      command: server /data --console-address ":9001"
+      command: server /data --console-address ":9001" --address ":9002"
     mc:
       image: minio/mc:RELEASE.2024-05-09T17-04-24Z
       depends_on:
         - minio
       entrypoint: >
         /bin/sh -c "
-        /usr/bin/mc alias set sitespeedio http://minio:9000 sitespeedio tracksofmytears &&
+        /usr/bin/mc alias set sitespeedio http://minio:9002 sitespeedio tracksofmytears &&
         (/usr/bin/mc mb --region --region=motown sitespeedio/sitespeedio || echo 'Bucket already exists') &&
         /usr/bin/mc ilm rule add --expire-days 30 sitespeedio/sitespeedio &&
         /usr/bin/mc anonymous set public myminio/sitespeedio &&
         /usr/bin/mc admin config set sitespeedio compression extensions=".html,.css,.js" &&
         echo 'MinIO and lifecycle policy setup complete.'"
       environment:
-        MC_HOST_myminio: http://sitespeedio:tracksofmytears@minio:9000
+        MC_HOST_myminio: http://sitespeedio:tracksofmytears@minio:9002
 volumes:
   postgres-data:
   minio-data:

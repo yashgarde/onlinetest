@@ -39,8 +39,8 @@ location:
 
 # Where to connect to the message broker that is a Redis like thing
 redis:
-  port: null
-  host: null
+  port: 6379
+  host: localhost
   password: jgsay7f2fgfgda6acCa7g()jaba51!
   tls: null
   
@@ -56,7 +56,7 @@ log:
 
 # The working directory for the testrunner, where it temporary will put it files
 # By default it used the os.tmpdir
-# workingDirectory: "."
+workingDirectory: "/Users/yash.garde"
 
 # The sitespeed.io executable. The default is a globally installed sitespeed.io
 executable: "sitespeed.io"
