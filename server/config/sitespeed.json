@@ -1,12 +1,13 @@
 {
     "s3": {
-        "endpoint": "http://127.0.0.1:9002",
+        "endpoint": "http://10.0.10.146:9002",
         "bucketname": "sitespeedio",
         "key": "sitespeedio",
         "secret": "tracksofmytears",
         "region": "motown"
     },
-    "resultBaseURL": "http://127.0.0.1:9002/sitespeedio",
+    "xvfb": true,
+    "resultBaseURL": "https://sitespeed-dev.devsnc.com/result",
     "visualMetrics": true,
     "videoParams": {
         "createFilmstrip": true,
