@@ -7,7 +7,7 @@
         "region": "motown"
     },
     "xvfb": true,
-    "resultBaseURL": "https://sitespeed-dev.devsnc.com/result",
+    "resultBaseURL": "https://sitespeed-dev.devsnc.com/result/sitespeedio",
     "visualMetrics": true,
     "videoParams": {
         "createFilmstrip": true,
