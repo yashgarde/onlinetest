@@ -156,6 +156,7 @@ async function runTest(job, workingDirectory, configFileName, logger) {
 
 async function setupParameters(job, workingDirectory, configFileName) {
   let parameters = [
+    '-vvv',
     '--config',
     join(workingDirectory, configFileName),
     '--storeResult',
@@ -194,7 +195,7 @@ async function handleScriptingFile(job, workingDirectory) {
 
 async function cleanupWorkingDirectory(directory, logger) {
   try {
-    await rm(directory, { recursive: true });
+    // await rm(directory, { recursive: true });
   } catch (error) {
     logger.error('Failed to clean up working directory: %s', error);
   }
