@@ -1,6 +1,6 @@
 # Setup the server
 server:
-  port: 3000
+  port: 3001
   # Configure SSL. Add the path to the key and certificate file
   ssl:
     key: 
