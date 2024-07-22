@@ -42,7 +42,7 @@ disableSearchGUI: false
 search:
   resultPerPage: 100
   # Show slug column in search result
-  showSlug: false
+  showSlug: true
   # Show the label column in the search result
   showLabel: true
 ## Configure the GUI
@@ -50,11 +50,11 @@ html:
   css:
     override:
   logo:
-    path: "/img/logo.svg"
+    path: "/img/sn_logo.svg"
     width: 300
     alt: "sitespeed.io logo"
   logoHeader:
-    path: "/img/logoHeader.svg"
+    path: "/img/sn_logo.svg"
     width: 112
     height: 18
     alt: "sitespeed.io logo"
@@ -65,7 +65,7 @@ html:
   # You can choose to either show the log from sitespeed.io or a random AI generated image.
   showRandomAIImage: false
   # Show the Lighthouse box
-  useLighthouse: false
+  useLighthouse: true
 
 # How to format dates
 dateformat: "YYYY-MM-DD HH:mm:ss"
