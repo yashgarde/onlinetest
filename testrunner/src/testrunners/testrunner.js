@@ -156,7 +156,6 @@ async function runTest(job, workingDirectory, configFileName, logger) {
 
 async function setupParameters(job, workingDirectory, configFileName) {
   let parameters = [
-    '-vvv',
     '--config',
     join(workingDirectory, configFileName),
     '--storeResult',
