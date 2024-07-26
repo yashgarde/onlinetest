@@ -45,4 +45,14 @@ services:
         MC_HOST_myminio: http://sitespeedio:tracksofmytears@minio:9002
 volumes:
   postgres-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /data/postgresql
   minio-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /data/minio
