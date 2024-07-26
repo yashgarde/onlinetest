@@ -22,8 +22,11 @@
     },
     "html": {
         "showAllWaterfallSummary": true,
-        "homeurl": "https://www.sitespeed-dev.devsnc.com",
+        "homeurl": "https://sitespeed-dev.devsnc.com",
         "compareURL": "https://compare.sitespeed.io"
+    },
+    "plugins": {
+        "add": ["analysisstorer"]
     },
     "filmstrip": {
         "showAll": true
