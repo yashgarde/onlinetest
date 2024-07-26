@@ -21,7 +21,9 @@
         "framerate": "60"
     },
     "html": {
-        "showAllWaterfallSummary": true
+        "showAllWaterfallSummary": true,
+        "homeurl": "https://www.sitespeed-dev.devsnc.com",
+        "compareURL": "https://compare.sitespeed.io"
     },
     "filmstrip": {
         "showAll": true
