@@ -13,6 +13,7 @@
     "browsertime": {
         "video": true
     },
+    "gzipHAR": true,
     "xvfb": true,
     "resultBaseURL": "https://sitespeed-dev.devsnc.com/result/sitespeedio",
     "visualMetrics": true,
