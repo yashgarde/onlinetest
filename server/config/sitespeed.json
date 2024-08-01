@@ -4,7 +4,8 @@
         "bucketname": "sitespeedio",
         "key": "sitespeedio",
         "secret": "tracksofmytears",
-        "region": "motown"
+        "region": "motown",
+        "removeLocalResult": true
     },
     "copyLatestFilesToBase": true,
     "screenshot": {
@@ -24,7 +25,8 @@
     "html": {
         "showAllWaterfallSummary": true,
         "homeurl": "https://sitespeed-dev.devsnc.com",
-        "compareURL": "https://compare.sitespeed.io"
+        "compareURL": "https://compare.sitespeed.io",
+        "logDownloadLink": true
     },
     "plugins": {
         "add": ["analysisstorer"]
