@@ -22,6 +22,7 @@
         "createFilmstrip": true,
         "framerate": "60"
     },
+    "logToFile": true,
     "html": {
         "showAllWaterfallSummary": true,
         "homeurl": "https://sitespeed-dev.devsnc.com",
